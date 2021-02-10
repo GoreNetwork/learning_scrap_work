@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.9.0 on win32)" generated="20210205 11:58:09.831" rpa="false">
+<suite id="s1" name="Process Scrap" source="D:\github\learning_scrap_work\robot framework\process_scrap.robot">
+<test id="s1-t1" name="Test">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>bob</arg>
+</arguments>
+<status status="PASS" starttime="20210205 11:58:09.858" endtime="20210205 11:58:09.858"></status>
+</kw>
+<status status="PASS" starttime="20210205 11:58:09.857" endtime="20210205 11:58:09.859" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20210205 11:58:09.832" endtime="20210205 11:58:09.860"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Process Scrap">Process Scrap</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
