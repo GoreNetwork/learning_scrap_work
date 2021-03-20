@@ -1,0 +1,1 @@
+{"hostname": "dev2", "iptablesFile": " iptables/server1.iptables", "hostInterfaces": {"eth1": {"name": "eth1", "prefix": "172.19.0.12/24", "gateway": "172.19.0.1"}}}

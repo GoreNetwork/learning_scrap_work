@@ -1,0 +1,2 @@
+dev1, iptables/server1.iptables,eth1,192.168.0.116/24,192.168.0.1
+dev2, iptables/server1.iptables,eth1,172.19.0.12/24,172.19.0.1
