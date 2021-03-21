@@ -1,0 +1,17 @@
+Using Tate Gallary collecion for this
+https://github.com/tategallery/collection.git
+
+new types:
+    numpy:
+        np.array
+            Basically a list
+        np.ndarray
+            Rows and colums
+            
+    pandas:
+        pd.Series
+            Single Colum
+            A list with lables per item
+        pd.DataFrame
+            Multi Colum
+            Row lables, and Colum lables (looks like excel sheet)
