@@ -93,7 +93,7 @@ for host_file_data in hosts_file_data:
     #  got to watch out for empty lines
     if len(host_file_data) < 2:
         continue
-    pprint(host_file_data)
+    # pprint(host_file_data)
     output_file_data = {
         "hostname": host_file_data[0],
         "iptablesFile": host_file_data[1],
