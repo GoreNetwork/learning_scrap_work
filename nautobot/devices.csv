@@ -1,0 +1,8 @@
+Site,Rack,Manufacturer,Model,IP
+Himes_house,Closet,Cisco, WS-C3750G-24T,192.168.0.104
+Himes_house,office,home_made,home_made,192.168.0.116
+Himes_house,Virtual,Cisco,R1,10.0.0.1
+Himes_house,Virtual,Cisco,R2,10.0.0.2
+Himes_house,Virtual,Cisco,R3,10.0.0.3
+Himes_house,Virtual,Cisco,R4,10.0.0.4
+Himes_house,Virtual,Cisco,R5,10.0.0.5
