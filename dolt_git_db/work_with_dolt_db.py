@@ -3,6 +3,7 @@ import sys
 import json
 # import netmiko
 
+
 #Start server with "dolt sql-server" run in the folder where the repo is
 #Gives an output of Starting server with Config HP="localhost:3306"|U="root"|P=""|T="28800000"|R="false"|L="info"
 # Documentation here https://docs.dolthub.com/interfaces/sql/clients
