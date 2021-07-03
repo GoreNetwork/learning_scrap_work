@@ -27,3 +27,6 @@ Commit/save data (git ishly)
 
 See if changes have been made
 	 dolt status
+	 
+dolt diff
+	See what's changed

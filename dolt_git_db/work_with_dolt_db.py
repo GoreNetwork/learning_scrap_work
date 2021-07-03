@@ -3,6 +3,10 @@ import sys
 import json
 # import netmiko
 
+#Start server with "dolt sql-server" run in the folder where the repo is
+#Gives an output of Starting server with Config HP="localhost:3306"|U="root"|P=""|T="28800000"|R="false"|L="info"
+# Documentation here https://docs.dolthub.com/interfaces/sql/clients
+
 
 ip = '127.0.0.1'
 port = '3306'
@@ -54,15 +58,24 @@ class dolt_work:
 test_db = dolt_work(ip, port, db, db_user, db_password)
 
 try:
+    # build_table_statment= "drop table json_spew;"
+    # print(test_db.run_sql_statment(build_table_statment))
+    print(test_db.run_sql_statment('show tables;'))
     build_table_statment= "create table json_spew(json_feild text, prime_key int not null auto_increment, primary key(prime_key))"
     print(test_db.run_sql_statment(build_table_statment))
-    print(test_db.run_sql_statment('show tables;'))
+
 except:
     pass
 
 
+# build_table_statment= "drop table json_spew;"
+# print(test_db.run_sql_statment(build_table_statment))
+
 crap_data = '{"name":"John", "age":30, "car":null}'
+
 json_data = json.loads(crap_data)
+
+
 
 for x in range(1,3):
     json_data['age']=json_data['age']+1
