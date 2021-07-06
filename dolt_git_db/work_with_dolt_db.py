@@ -61,33 +61,34 @@ class dolt_work:
 
 test_db = dolt_work(ip, port, db, db_user, db_password)
 
-# try:
+try:
 
-print(test_db.drop_table('json_spew'))
+    # print(test_db.drop_table('json_spew'))
+    print(test_db.run_sql_statment('show tables;'))
+    build_table_statment= "create table json_spew(json_feild text, prime_key int not null auto_increment, primary key(prime_key))"
+    build_table_statment= "create table bubba_joe(json_feild text, prime_key int not null auto_increment, primary key(prime_key))"
+    print(test_db.run_sql_statment(build_table_statment))
+    print(test_db.run_sql_statment('show tables;'))
 
-# build_table_statment= "create table json_spew(json_feild text, prime_key int not null auto_increment, primary key(prime_key))"
-# print(test_db.run_sql_statment(build_table_statment))
-print(test_db.run_sql_statment('show tables;'))
-
-# except:
-    # pass
-
-
-# build_table_statment= "drop table json_spew;"
-# print(test_db.run_sql_statment(build_table_statment))
-
-# crap_data = '{"name":"John", "age":30, "car":null}'
-
-# json_data = json.loads(crap_data)
+except:
+    pass
 
 
+# build_table_statment= "drop table bubba_joe;"
+print(test_db.drop_table("bubba_joe"))
 
-# for x in range(1,3):
-#     json_data['age']=json_data['age']+1
-#     junk_json_data=json.dumps(json_data)
-#     insert_statment = f'''INSERT INTO json_spew (json_feild)VALUES ('{junk_json_data}');'''
-#     print (insert_statment)
-#     test_db.insert_to_db(insert_statment)
+crap_data = '{"name":"John", "age":30, "car":null}'
+
+json_data = json.loads(crap_data)
+
+
+
+for x in range(1,3):
+    json_data['age']=json_data['age']+1
+    junk_json_data=json.dumps(json_data)
+    insert_statment = f'''INSERT INTO bubba_joe (json_feild)VALUES ('{junk_json_data}');'''
+    print (insert_statment)
+    test_db.insert_to_db(insert_statment)
 test_db.close_conn()
 
 
