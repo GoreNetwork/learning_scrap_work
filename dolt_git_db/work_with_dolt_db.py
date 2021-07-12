@@ -11,7 +11,7 @@ from pprint import pprint
 
 ip = '192.168.0.10'
 port = '3306'
-db = 'dolt'
+db = 'test_for_dolt'
 db_user = 'root'
 db_password = ''
 # ssh_user
@@ -83,9 +83,9 @@ def drop_tables(test_db, needed_tables):
 
 
 # drop_tables(test_db, needed_tables1)
-# build_tables(test_db,needed_tables1)
+build_tables(test_db,needed_tables1)
 # build_tables(test_db,needed_tables2)
-drop_tables(test_db, needed_tables2)
+# drop_tables(test_db, needed_tables2)
 
 print(test_db.run_sql_statment('show tables;'))
 
@@ -102,7 +102,7 @@ for x in range(1,3):
     junk_json_data=json.dumps(json_data)
     insert_statment = f'''INSERT INTO bubba_joe (json_feild)VALUES ('{junk_json_data}');'''
     # print (insert_statment)
-    # test_db.insert_to_db(insert_statment)
+    test_db.insert_to_db(insert_statment)
 select_from_table = f'select * from bubba_joe;'
 try:
     pprint (test_db.run_sql_statment(select_from_table))
