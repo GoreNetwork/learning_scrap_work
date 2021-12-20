@@ -1,0 +1,14 @@
+# docker run -d -p 8000:8000 -p 514:514 -p 514:514/udp -e "SPLUNK_START_ARGS=--accept-license" -e "SPLUNK_PASSWORD=password" --name splunk splunk/splunk:latest
+# start this with docker-compose -f start_splunk.yml up -d
+
+version: '3'
+services:
+  splunk: #Name of image
+    image: splunk/splunk  #Image to use
+    ports: # -p 
+      - 8000:8000 #Ports to publish out (-p) server_port:port_in_container
+      - 514:514
+      - 514:514/udp
+    environment: # -e
+      - SPLUNK_START_ARGS=--accept-license
+      - SPLUNK_PASSWORD=password
