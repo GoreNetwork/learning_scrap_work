@@ -1,5 +1,14 @@
 import socket
 
+"""get splunk container working with 
+docker run -d -p 8000:8000 -p 514:514 -p 514:514/udp -e "SPLUNK_START_ARGS=--accept-license" -e "SPLUNK_PASSWORD=password" --name splunk splunk/splunk:latest
+
+then splunk app Cisco Network Assurance Engine Add-on for Splunk Enterprise
+then make a new settings/data input, udp port 514.
+https://www.youtube.com/watch?v=ZIXonhcpz3g
+
+"""
+
 class Facility:
   "Syslog facilities"
   KERN, USER, MAIL, DAEMON, AUTH, SYSLOG, \
@@ -21,7 +30,8 @@ class Syslog:
   >>> log.send("hello", Level.WARNING)
   """
   def __init__(self,
-               host="localhost",
+                #This is my docker server with splunk running
+               host="192.168.0.117",
                port=514,
                facility=Facility.DAEMON):
     self.host = host
