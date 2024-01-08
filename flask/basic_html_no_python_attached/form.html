@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Base Form Page</title>
+</head>
+<body>
+    <!-- Passing info from a form to the server through the URL -->
+    <!-- learning, so we just forwarding to google, however the username/password are in the URL (super insecure) -->
+    <p>What up bitches!?</p>
+    <form action="https://www.google.com" method = 'get'>
+        <label for="username">Gimme your username!!:</label>
+        <input id="username" type="text" name="username" placeholder="Your username here" >
+        <br>
+        <label for="password">Password:</label>
+        <input id="password" type="password" name="password" placeholder="Your password here" >
+        <br>
+        <input type="submit" name="" value="Enter">
+    </form>
+    <p></p>
+    <form method='get'>
+        <!-- Doing Radio Buttions -->
+        <label for="dog_t">I like dogs:</label>
+        <!-- These are connected because of the name -->
+        <input id="dog_t" type="radio" name="dog_t" value="yes"  >
+        <label for="dog_f">I don't like dogs:</label>
+        <input id="dog_f" type="radio" name="dog_t" value="no">
+        <br>
+        <!-- Doing Dropdown menu -->
+        <label for="dog_choice">Choose your favorate dog</label>
+        <select name="dog_choice" id="dog_choice">
+            <option value="Cleric">Cleric</option>
+            <option value="Cavashon">Cavashon</option>
+            <option value="idiot">What I like isn't listed</option>
+        </select>
+        <p>Anything else you want to say?</p>
+        <textarea name="comments" rows="4" cols="30"></textarea>
+        <br>
+        <input type="submit" name="" value="Enter">
+
+    </form>
+
+</body>
+</html>

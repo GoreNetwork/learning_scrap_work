@@ -1,0 +1,76 @@
+h1{
+    color: rgb(22, 9, 166);
+    font-size: 40px;
+    text-align: left;
+    font-family: 'Pacifico', cursive;
+}
+
+li{
+    color: green;
+    font-size: 20px;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p{
+    color: #1ccaca;
+    font-size: 20px;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h4{
+    color: rgb(210, 17, 17) /* 51% transparent */;
+}
+body{
+    background-color: gray;
+/*     
+    background-image: url("https://www.w3schools.com/css/img_fjords.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+    */
+
+}
+div{
+    background-color: rgb(11, 213, 14);
+    color: rgb(0, 0, 0);
+    border: 2px solid black;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 25px;
+    /* border-width: thick; */
+}
+span{
+    color: rgb(255, 0, 0);
+    font-size: 20px;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div p{
+    color: inherit;
+    font-size: 20px;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.test_div{
+    background-color: rgb(213, 11, 183);
+    color: rgb(0, 0, 0);
+    border: 2px solid black;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 25px;
+    /* border-width: thick; */
+}
+.test_span{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#test_p{ /* weird that the paragraph starts with a #, where dev and spans start with . */
+    color: purple;
+    font-size: 20px;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;}
