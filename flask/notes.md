@@ -87,3 +87,40 @@ like this
 Then just apply that test_div tag to any section you want formated that way.  Most anything type can take an id, however some types are refrenced diffrently in CSS: a div id is refrenced starting with a ".", however a p tag's ID is refrenced with a #
 
 <h1>Bootstrap</h1>
+Big CSS / Java file: prebuilt/easy to use things we can put in our website documentation at www.getbootstrap.com.  Just as you can link to a local CSS file you can link to a webpage with CSS on it via a CDN (content delevery network)
+
+```
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+```
+or 
+```
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+```
+
+check boxes:  https://getbootstrap.com/docs/5.3/forms/checks-radios/
+
+<h1>Python stuff</h1>
+
+create venv with `conda create --name [name of venv]`
+
+create with a particular python version `conda create --name [name of venv] python=3.9`
+
+See a list of your envs with `conda env list`
+
+<h1>Flask stuff</h1>
+
+<h2>Routing</h2>
+
+The app.route: determines the url path to the function (view) of the website
+@app.route('/')  # This is the root of the website (http://127.0.0.1:5000/)
+@app.route('/page_2') # this would be http://127.0.0.1:5000/page_2
+
+```
+@app.route('/')
+def index():
+    return '<h1>Kick the puppy!!</h1>'
+# the functions "index" and "page_2" define how these pages are built
+@app.route('/page_2')
+def page_2():
+    return '<h1>Kick the puppy even more!!</h1>'
+```
