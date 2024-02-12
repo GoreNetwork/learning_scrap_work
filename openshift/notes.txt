@@ -1,0 +1,3 @@
+Install process
+    sudo yum update
+    sudo yum upgrade

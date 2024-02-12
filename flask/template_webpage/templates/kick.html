@@ -1,0 +1,11 @@
+{% extends "base_page.html" %}
+{% block content %}
+
+<h1>Things we should kick</h1>
+<ul>
+    {% for item in to_kick %}
+        <li>{{item}}</li>
+    {% endfor %}
+
+</ul>
+{% endblock %}
