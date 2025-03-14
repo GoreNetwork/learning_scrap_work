@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
@@ -14,6 +14,16 @@ def puppies(name):
     to_kick = [name, 'puppy', 'kitten', 'baby', 'toddler', 'teenager', 'adult', 'elderly']
     return render_template('kick.html', to_kick=to_kick)
 
+@app.route('/signup')
+def signup():
+    return render_template('signup.html')
+
+@app.route('/signedup')
+def signedup():
+    email = request.args.get('email')
+    name = request.args.get('name')
+    password = request.args.get('password')
+    return render_template('signedup.html', name=name, email=email, password=password)
 
 if __name__ == '__main__':
-    app.run(debug=True) 
+    app.run() 
