@@ -13,5 +13,5 @@ fn main() {
     // }
     println!("{numbers:?}"); // regular print same as above
     println!("{numbers:#?}");  // pprint
-       
+    dbg!(&numbers); // debug print to stderr, prints the line number and file name
 }
